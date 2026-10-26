@@ -1,16 +1,136 @@
 
-<form action="https://formspree.io/f/mdeeekjy" method="POST">
-  <label for="name">Your name</label>
-  <input id="name" type="text" name="name" required>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Mucaro Development</title>
+  <link rel="stylesheet" href="/style.css">
 
-  <label for="email">Email address</label>
-  <input id="email" type="email" name="email" required>
+  <style>
+    .contact-section {
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
 
-  <label for="organization">Organization</label>
-  <input id="organization" type="text" name="organization">
+    .contact-section h1 {
+      font-size: 36px;
+      font-weight: 400;
+      margin-bottom: 15px;
+    }
 
-  <label for="message">How can I help?</label>
-  <textarea id="message" name="message" rows="5" required></textarea>
+    .contact-section p {
+      margin-bottom: 35px;
+      line-height: 1.6;
+    }
 
-  <button type="submit">Send inquiry</button>
-</form>
+    .contact-section form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .contact-section label {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 0;
+      background: white;
+      color: black;
+      font: inherit;
+      box-sizing: border-box;
+    }
+
+    .contact-section textarea {
+      resize: vertical;
+    }
+
+    .contact-section button {
+      background: black;
+      color: white;
+      border: 1px solid black;
+      padding: 14px 24px;
+      cursor: pointer;
+      font: inherit;
+      margin-top: 15px;
+    }
+
+    .contact-section button:hover {
+      background: white;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="/">Mucaro Development</a>
+      <a href="/about.html">About</a>
+      <a href="/work.html">Work</a>
+      <a href="/services.html">Services</a>
+      <a href="/products.html">Products</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h1>Contact</h1>
+      <p>
+        Have a project in mind?
+        Tell me a little about what you're looking for.
+      </p>
+
+      <form
+        action="https://formspree.io/f/mdeeekjy"
+        method="POST"
+      >
+        <label for="name">Your name</label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          required
+        >
+
+        <label for="email">Email address</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          required
+        >
+
+        <label for="organization">Organization</label>
+        <input
+          id="organization"
+          type="text"
+          name="organization"
+        >
+
+        <label for="message">How can I help?</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          required
+        ></textarea>
+
+        <button type="submit">
+          Send inquiry
+        </button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
