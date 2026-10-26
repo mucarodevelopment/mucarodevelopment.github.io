@@ -629,9 +629,41 @@ li {
     text-align: left;
   }
 }
-.pricing-row {
-  background: #eeeeee !important;
-  padding: 25px !important;
-  display: flex !important;
-  justify-content: space-between !important;
+
+/* Engagement section adjustments */
+
+.engagement-section {
+  max-width: 850px;
 }
+
+.engagement-section > p {
+  max-width: 720px;
+  color: var(--muted);
+}
+
+.engagement-section .pricing-section {
+  max-width: 800px;
+}
+
+.engagement-section .pricing-section h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.engagement-section .pricing-section .pricing-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.engagement-section .pricing-section .pricing-row span {
+  font-size: 16px;
+}
+
+.engagement-section .pricing-section .pricing-row span:last-child {
+  color: var(--muted);
+}
+
