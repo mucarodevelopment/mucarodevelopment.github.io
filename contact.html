@@ -4,151 +4,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Mucaro Development for operations consulting, project management, and technical support.">
   <title>Contact | Mucaro Development</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
 
   <style>
-    /* Page basics */
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      color: #222;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-    }
-
-    /* Header and navigation */
-    header {
-      width: 100%;
-      padding: 24px 40px;
-    }
-
-    header nav {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 28px;
-    }
-
-    header nav a {
-      color: #222;
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 400;
-    }
-
-    header nav a:first-child {
-      margin-right: auto;
-      font-size: 17px;
-      font-weight: 600;
-    }
-
-    header nav a:hover {
-      text-decoration: underline;
-    }
-
-    header nav a:last-child {
-      text-decoration: underline;
-      text-underline-offset: 5px;
-    }
-
-    /* Contact section */
-    .contact-section {
+    /* Contact form styling */
+    .contact-form {
       max-width: 600px;
-      margin: 60px auto;
-      padding: 0 20px;
+      margin-top: 40px;
     }
 
-    .contact-section h1 {
-      font-size: 36px;
-      font-weight: 400;
-      margin: 0 0 15px;
-    }
-
-    .contact-section p {
-      margin: 0 0 35px;
-      line-height: 1.6;
-    }
-
-    /* Form */
-    .contact-section form {
+    .contact-form form {
       display: flex;
       flex-direction: column;
       gap: 12px;
     }
 
-    .contact-section label {
+    .contact-form label {
       font-size: 14px;
       margin-top: 10px;
     }
 
-    .contact-section input,
-    .contact-section textarea {
+    .contact-form input,
+    .contact-form textarea {
       width: 100%;
       padding: 12px;
       border: 1px solid #ccc;
       border-radius: 0;
-      background: white;
-      color: black;
+      background: #fff;
+      color: #222;
       font: inherit;
+      box-sizing: border-box;
     }
 
-    .contact-section textarea {
+    .contact-form textarea {
       resize: vertical;
     }
 
-    .contact-section input:focus,
-    .contact-section textarea:focus {
+    .contact-form input:focus,
+    .contact-form textarea:focus {
       outline: 1px solid #222;
       border-color: #222;
     }
 
-    /* Submit button */
-    .contact-section button {
-      background: black;
-      color: white;
-      border: 1px solid black;
+    .contact-form button {
+      background: #222;
+      color: #fff;
+      border: 1px solid #222;
       padding: 14px 24px;
-      cursor: pointer;
       font: inherit;
+      cursor: pointer;
       margin-top: 15px;
       transition: background 0.2s, color 0.2s;
     }
 
-    .contact-section button:hover {
-      background: white;
-      color: black;
+    .contact-form button:hover {
+      background: transparent;
+      color: #222;
     }
 
-    /* Mobile layout */
     @media (max-width: 600px) {
-      header {
-        padding: 20px;
-      }
-
-      header nav {
-        gap: 16px;
-      }
-
-      header nav a:first-child {
-        width: 100%;
-        margin-right: 0;
-      }
-
-      header nav a {
-        font-size: 14px;
-      }
-
-      .contact-section {
-        margin: 40px auto;
-        padding: 0 20px;
-      }
-
-      .contact-section h1 {
-        font-size: 32px;
+      .contact-form {
+        margin-top: 30px;
       }
     }
   </style>
@@ -156,29 +74,38 @@
 
 <body>
 
-  <header>
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      MUCARO DEVELOPMENT
+    </a>
+
     <nav aria-label="Main navigation">
-      <a href="/">Mucaro Development</a>
-      <a href="/about.html">About</a>
-      <a href="/work.html">Work</a>
-      <a href="/services.html">Services</a>
-      <a href="/contact.html" aria-current="page">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active"
+         aria-current="page">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <section class="contact-section">
-      <h1>Contact</h1>
+  <main class="page-content">
 
-      <p>
+    <section class="page-intro">
+      <h1>Contact</h1>
+      <p class="lead">
         Have a project in mind?
         Tell me a little about what you're looking for.
       </p>
+    </section>
+
+    <section class="contact-form">
 
       <form
         action="https://formspree.io/f/mdeeekjy"
         method="POST"
       >
+
         <label for="name">Your name</label>
         <input
           id="name"
@@ -216,9 +143,19 @@
         <button type="submit">
           Send inquiry
         </button>
+
       </form>
+
     </section>
+
   </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Mucaro Development</p>
+    <a href="mailto:mucarodevelopment@gmail.com">
+      Get in touch &rarr;
+    </a>
+  </footer>
 
 </body>
 </html>
