@@ -564,3 +564,45 @@ li {
   color: black;
 }
 
+.pricing-section {
+  margin: 60px 0 50px;
+  max-width: 850px;
+}
+
+.pricing-section h3 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.pricing-section > p {
+  margin-bottom: 35px;
+}
+
+.pricing-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 30px;
+  padding: 22px 0;
+  border-bottom: 1px solid #d8d8d4;
+  font-size: 17px;
+}
+
+.pricing-row:first-of-type {
+  border-top: 1px solid #d8d8d4;
+}
+
+.pricing-row span:last-child {
+  white-space: nowrap;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .pricing-row {
+    flex-direction: column;
+    gap: 6px;
+    padding: 18px 0;
+  }
+}
+
