@@ -629,3 +629,9 @@ li {
     text-align: left;
   }
 }
+.pricing-row {
+  background: #eeeeee !important;
+  padding: 25px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+}
