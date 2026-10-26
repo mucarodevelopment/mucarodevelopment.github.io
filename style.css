@@ -522,3 +522,45 @@ li {
   }
 }
 
+.contact-section {
+  max-width: 600px;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.contact-section label {
+  font-size: 14px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  background: white;
+  color: black;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.contact-section button {
+  background: black;
+  color: white;
+  border: 1px solid black;
+  padding: 14px 24px;
+  cursor: pointer;
+  font: inherit;
+  margin-top: 10px;
+}
+
+.contact-section button:hover {
+  background: white;
+  color: black;
+}
+
